@@ -23,7 +23,7 @@
 
 
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button x:Name="ResultadoButton" Height="20" Width="60" HorizontalAlignment="Center" Margin="10,10" Content="Resultado"  />
+                <Button x:Name="ResultadoButton" Height="20" Width="60" HorizontalAlignment="Center" Margin="10,10" Content="Resultado" Click="ResultadoButton_Click" />
             </StackPanel>
 
             <Label Content="Calificaciones: " Margin="5,0" HorizontalAlignment="Center" FontWeight="bold" FontSize="20" />
