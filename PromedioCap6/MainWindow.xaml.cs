@@ -25,6 +25,7 @@ namespace Ejercicio1Cap6
         float[][] calificaciones;
         public static int cont = 0;
         public static float suma = 0;
+        public static float promedio = 0;
     
         public MainWindow()
         {
@@ -58,6 +59,10 @@ namespace Ejercicio1Cap6
 
         private void ResultadoButton_Click(object sender, RoutedEventArgs e)
         {
+            promedio = suma / cont;
+
+            ListViewCalificaciones.Items.Add("El promedio es: ");
+            ListViewCalificaciones.Items.Add(promedio);
 
 
         }
