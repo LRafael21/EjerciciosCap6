@@ -25,7 +25,7 @@ namespace Ejercicio1Cap6
         float[][] calificaciones;
         public static int cont = 0;
         public static float suma = 0;
- 
+        public static float promedio = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -52,13 +52,17 @@ namespace Ejercicio1Cap6
                 {
                     calificaciones[i][m] = Convert.ToInt32(Microsoft.VisualBasic.Interaction.InputBox($"Digite la calificacion del alumno numero: {m + 1}  del salón {i + 1}", "Calificaciones Alumnos", " ", 0));
                     suma += calificaciones[i][m];
-
                 }
             }
         }
 
-        private void ResultadosButton_Click(object sender, RoutedEventArgs e)
+        private void ResultadoButton_Click(object sender, RoutedEventArgs e)
         {
+            promedio = suma / cont;
+
+            ListViewCalificaciones.Items.Add("El promedio de los estudiantes es: ");
+            ListViewCalificaciones.Items.Add(promedio);
+
 
         }
     }
