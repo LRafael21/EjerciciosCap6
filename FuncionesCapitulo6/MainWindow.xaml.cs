@@ -56,7 +56,7 @@ namespace Ejercicio1Cap6
 
        
         
-    //Funciomn
+    //Funcion
         private void ResultadoButton_Click(object sender, RoutedEventArgs e)
         {
             promedio = suma / cont;
